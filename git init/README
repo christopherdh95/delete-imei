@@ -5,7 +5,7 @@ require_once 'SOMC.php';
 $IMEI=$_GET['IMEI'];
 $ORIGINAL_LOTE=SOMC::getOriginalLote($IMEI);
 #http://lcsc.intranet.am.sony.com/SOMC/php/ajaxdelete.php?IMEI=013335008280112
-echo SOMC::deleteIMEI($IMEI);
+echo SOMC::deleteIMEI($013335008280112);
 	$count_OLD= SOMC::getLoteCount($ORIGINAL_LOTE);
 	$qty_OLD=SOMC::getLoteQty($ORIGINAL_LOTE);
 	if ($count_OLD < $qty_OLD ) {
